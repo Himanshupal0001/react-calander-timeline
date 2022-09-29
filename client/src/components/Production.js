@@ -11,6 +11,7 @@ export default function Production() {
     const [groups, setGroups] = useState([]);
     const [items, setItems] = useState([]);
 
+
     const fetchData = async () => {
         try {
             const { data } = await getProd();
@@ -21,7 +22,7 @@ export default function Production() {
                 i.end_time = moment(i.end_time, 'YYYY-MM-DDTHH:mm:ss');
                 return i;
             })
-            setItems(itemss)
+            setItems(itemss);
         } catch (err) {
             console.log(err)
         }
@@ -45,3 +46,18 @@ export default function Production() {
         </div>
     )
 }
+
+
+/*
+const { data } = await getProd();
+            setGroups(data.data.groups);
+            gruups = data.data.groups
+            console.log('Gruups', gruups)
+            const item = data.data.items;
+            let itemss = item.map(i => {
+                i.start_time = moment(i.start_time, 'YYYY-MM-DDTHH:mm:ss');
+                i.end_time = moment(i.end_time, 'YYYY-MM-DDTHH:mm:ss');
+                return i;
+            })
+            console.log('Itemms', itemss);
+            setItems(itemss);*/
