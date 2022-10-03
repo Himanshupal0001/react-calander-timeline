@@ -86,7 +86,6 @@ export default function Paint() {
 
     return (
         <div>
-            Paint
             <Timeline
                 groups={groups}
                 items={items}

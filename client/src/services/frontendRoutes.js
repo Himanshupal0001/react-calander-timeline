@@ -12,19 +12,7 @@ export function getSub() {
     return axios.get(apiUrl_sub);
 }
 
-// export async function getPaint() {
-//     try {
-//         const res = await axios.get(apiUrl_paint);
-//         console.log(res.data)
-//     }
-//     catch (err) {
-//         console.log(err);
-
-//     }
-// }
-
 export function getPaint() {
-    //console.log('success');
     return axios.get(apiUrl_paint)
 }
 

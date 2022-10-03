@@ -60,7 +60,7 @@ export default function Final() {
 
     return (
         <div>
-            Final
+
             <Timeline
                 groups={groups}
                 items={items}

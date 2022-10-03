@@ -35,7 +35,6 @@ export default function Production() {
     return (
         <div>
             <div>
-                Production
                 <Timeline
                     groups={groups}
                     items={items}

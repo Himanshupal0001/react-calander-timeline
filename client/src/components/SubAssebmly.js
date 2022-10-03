@@ -5,50 +5,7 @@ import 'react-calendar-timeline/lib/Timeline.css'
 import moment from 'moment'
 import { getSub } from '../services/frontendRoutes'
 
-// const groups = [
-//     {
-//         "id": 1,
-//         "title": "P2022-0003"
-//     },
-//     {
-//         "id": 2,
-//         "title": "P2022-0009"
-//     },
-//     {
-//         "id": 3,
-//         "title": "2980"
-//     }
-// ]
 
-// const items = [
-//     {
-//         "id": 1,
-//         "title": "Amouage Capital Store Oman",
-//         "group": 1,
-//         "start_time": "2022-02-26T10:44:00.000Z",
-//         "end_time": "2022-04-01T10:44:00.000Z"
-//     },
-//     {
-//         "id": 2,
-//         "title": "NISHANE 3x3 PODIUM YAS MALL",
-//         "group": 2,
-//         "start_time": "2022-03-04T12:29:00.000Z",
-//         "end_time": "2022-03-19T12:29:00.000Z"
-//     },
-//     {
-//         "id": 3,
-//         "title": "GARRARD Boutique  (kingdom Mall-Riyadh)  Furniture",
-//         "group": 3,
-//         "start_time": "2022-02-05T07:18:00.000Z",
-//         "end_time": "2022-02-07T07:18:00.000Z"
-//     }
-// ]
-
-// const items_1 = items.map(i => {
-//     i.start_time = moment(i.start_time, 'YYYY-MM-DDTHH:mm:ss');
-//     i.end_time = moment(i.end_time, 'YYYY-MM-DDTHH:mm:ss');
-//     return i;
-// })
 
 export default function SubAssebmly() {
 
@@ -78,7 +35,6 @@ export default function SubAssebmly() {
     return (
         <div>
             <div>
-                SubAssebmly
                 <Timeline
                     groups={groups}
                     items={items}
